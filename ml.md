@@ -1,3 +1,6 @@
+系统性介绍
+http://colah.github.io/
+
 nlpjob
 http://www.52nlp.cn/category/%E9%97%AE%E7%AD%94%E7%B3%BB%E7%BB%9F
 
