@@ -1,3 +1,6 @@
+https://github.com/terryum/awesome-deep-learning-papers
+https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap
+
 1. A Neural Conversational Model
 https://arxiv.org/pdf/1506.05869.pdf
 
