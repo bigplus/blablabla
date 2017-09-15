@@ -27,7 +27,7 @@ def get_all():
         f.write(get_data_from_url(tmp_url))
         f.close()
         import time
-        time.sleep(1000 * 1)
+        time.sleep(1 * 1)
 if __name__ == '__main__':
     get_all()
   # me=Crawler()
