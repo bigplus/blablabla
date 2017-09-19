@@ -20,14 +20,16 @@ def get_data_from_url(url):
 TEMPLATE = 'http://www.120ask.com/question/'
 
 def get_all():
-    for i in range(70000000, 70599999):
+    # http://www.120ask.com/question/65190877.htm
+    # for i in range(70000000, 70599999):
+    for i in range(6519087, 65190877):
         tmp_url = TEMPLATE + str(i) + '.htm'
         print tmp_url
         f = open(str(i), 'w')
         f.write(get_data_from_url(tmp_url))
         f.close()
         import time
-        time.sleep(1 * 1)
+        time.sleep(10 * 1)
 if __name__ == '__main__':
     get_all()
   # me=Crawler()
