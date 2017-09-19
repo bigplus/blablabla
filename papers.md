@@ -26,4 +26,11 @@ https://arxiv.org/pdf/1310.4546.pdf
 
 6. A Neural Probabilistic Language Model 
 http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf
+
 7. http://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend
+
+8. Efficient Estimation of Word Representations in Vector Space
+https://arxiv.org/pdf/1301.3781.pdf
+
+9. Distributed Representations of Words and Phrases and their Compositionality
+https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf
