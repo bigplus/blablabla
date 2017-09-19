@@ -24,5 +24,6 @@ https://arxiv.org/pdf/1410.5401.pdf
 and their Compositionality
 https://arxiv.org/pdf/1310.4546.pdf
 
-6.A Neural Probabilistic Language Model 
+6. A Neural Probabilistic Language Model 
 http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf
+7. http://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend
