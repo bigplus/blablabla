@@ -22,7 +22,7 @@ TEMPLATE = 'http://www.120ask.com/question/'
 def get_all():
     # http://www.120ask.com/question/65190877.htm
     # for i in range(70000000, 70599999):
-    for i in range(6519087, 65190877):
+    for i in range(70000030, 70000031):
         tmp_url = TEMPLATE + str(i) + '.htm'
         print tmp_url
         f = open(str(i), 'w')
