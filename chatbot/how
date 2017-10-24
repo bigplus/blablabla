@@ -1,0 +1,56 @@
+* Objective
+    医疗机器人
+
+* Corpus
+    医疗问答网站
+    歌词
+
+    data02,03,06,04
+    2,4在跑，
+    3的数据转移到6，然后把3的彻底删除
+    歌词 09
+
+* corpus clean
+    1. find ./ -size 0 -print0 | xargs -0 rm
+    2. html-parser
+       回复：
+       提问：
+    3. 停词  git clone https://github.com/fwwdn/sensitive-stop-words.git
+        ' '分割
+    4. jieba 分词
+        使用用户字段
+        分词参考：
+            http://blog.csdn.net/q1w2e3r4470/article/details/48131373
+            https://github.com/fxsjy/jieba
+            https://www.zhihu.com/search?type=content&q=%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D
+    5. word2vec
+        gensim
+
+* spark cleaner
+1. Put crawled data to hdfs
+    eg. hadoop fs -put ccc /user/jerry/in
+        hadoop fs -put ddd /user/jerry/in
+2. goto data04 /usr/local/spark/spark-1.6.1-bin-cdh5.3.0/bin
+3. run follow the command
+    ./spark-submit --queue spark --deploy-mode client --master local --class org.jerry.html.cleaner.Main html-cleaner-1.0-SNAPSHOT-jar-with-dependencies.jar /user/jerry/in/vv /user/jerry/out/vv01
+    ./spark-submit --queue spark --deploy-mode client --master yarn-client --class org.jerry.html.cleaner.Main html-cleaner-1.0-SNAPSHOT-jar-with-dependencies.jar /user/jerry/in/ccc /user/jerry/out/vv03
+python 读取写入 中文 问题
+
+* Pretraining
+    问题：只用医疗数据还是都用
+    word2vec
+      1. 参数选择
+          http://blog.csdn.net/appleml/article/details/48292189
+      2. python工具，注意中文
+      3. 分词
+          https://github.com/NLPchina/ansj_seg
+
+* word2vec + rnn
+
+* rnn
+1. main
+2. model = nn + loss + train + ...
+3. data_process = jieba + find word2vec + ...
+
+* todo:
+  http://blog.csdn.net/juanjuan1314/article/details/75117990
